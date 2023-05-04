@@ -48,11 +48,23 @@ namespace MyChess {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Chess by ma1N";
-			this->Padding = System::Windows::Forms::Padding(0);
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			this->SuspendLayout();
+			// 
+			// MyForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(607, 607);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximumSize = System::Drawing::Size(623, 646);
+			this->MinimumSize = System::Drawing::Size(623, 646);
+			this->Name = L"MyForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"myChess";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
 	};
