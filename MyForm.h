@@ -9,6 +9,44 @@ namespace MyChess {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
+	class Piece {
+	public:
+		void addMoveToRecord();
+		void move();
+	protected:
+	private:
+	};
+
+	class Pawn : public Piece {
+	public:
+	private:
+	};
+
+	class Knight : public Piece {
+	public:
+	private:
+	};
+
+	class Bishop : public Piece {
+	public:
+	private:
+	};
+
+	class Rook : public Piece {
+	public:
+	private:
+	};
+
+	class Queen : public Piece{
+	public:
+	private:
+	};
+
+	class King : public Piece {
+	public:
+	private:
+	};
+
 	/// <summary>
 	/// Сводка для MyForm
 	/// </summary>
