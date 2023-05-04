@@ -9,5 +9,5 @@ int main(array<String^>^ args) {
 	Application::SetCompatibleTextRenderingDefault(false);
 	Application::EnableVisualStyles();
 	MyChess::MyForm form;
-	Application::Run(% form);
+	Application::Run(% form);	
 }
